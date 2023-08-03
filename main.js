@@ -1,6 +1,7 @@
 const ballContainer = document.querySelector('#ball-container')
-const question = document.querySelector("#question")
+const question = document.querySelector('#question')
 const shakeButton = document.querySelector('#shake-button')
+
 let answer = null
 
 const messages = [
@@ -45,14 +46,14 @@ const shakeBall = () => {
 
 answer = createAnswer()
 
-setTimeout(()=>{
+setTimeout ( () => {
     ballContainer.classList.remove('shake')
     ballContainer.append(answer)
 }, 1000)
 
 }
 
-const checkQuestion = () =() => {
+const checkQuestion =() => {
     return question.value.length > 0
 }
 
